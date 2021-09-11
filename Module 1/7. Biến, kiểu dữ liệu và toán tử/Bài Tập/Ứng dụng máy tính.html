@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- CÁCH 1 --> 
+    <h2>Caculator</h2>
+    <input type="text" id="form1">
+    <input type="text" id="form2">
+
+    <select name="" id="operator">
+        <option >+</option>
+        <option >-</option>
+        <option >*</option>
+        <option >/</option>
+    </select>
+    <h2>result</h2>
+    <input type="text" id="result">
+    <button onclick="myFuncition()">Submit</button>
+
+    <script>
+        function myFuncition(){
+            // gán từng cái id thành một .value
+            var form1 = document.getElementById('form1').value;
+            var form2 = document.getElementById('form2').value;
+            var operator = document.getElementById('operator').value;
+           
+    
+            if(operator=="+"){
+                result = parseInt(form1) + parseInt(form2);
+            }else if(operator=="-"){
+                result = parseInt(form1) - parseInt(form2);
+            }else if(operator=="*"){
+                result = parseInt(form1) * parseInt(form2);
+            }
+            else{
+                result = parseInt(form1) / parseInt(form2);
+            }
+            document.getElementById('result').value = result;
+        }
+    </script>
+
+
+    <!--   CÁCH 2 -->
+     <!-- <h2>Caculator</h2>
+    <input type="text" id="form1">
+    <input type="text" id="form2">
+
+  <p>
+    <button onclick="calBasic('+')">Add(+)</button>
+    <button onclick="calBasic('-')">Sub(-)</button>
+    <button onclick="calBasic('*')">Mul(*)</button>
+    <button onclick="calBasic('/')">Div(/)</button>
+</p>
+    <h2>result <input type="text" id="result"></h2>
+
+    <script>
+    function calBasic(input) {
+        var form1 = parseFloat(document.getElementById("form1").value);
+        var form2 = parseFloat(document.getElementById("form2").value);
+            console.log("result: " + result);
+            console.log(input);
+        switch (input) {
+            case '+':
+                result = form1 + form2;
+                break;
+            case '-':
+                result = form1 - form2;
+                break;
+            case '*':
+                result = form1 * form2;
+                break;
+            case '/':
+                result = form1 / form2;
+                break;
+        }
+        document.getElementById('result').innerText = result;
+    } -->
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Amount</h2>
+    <input type="text" id="amount">
+    <select id="form">
+        <option value="VND">Viet Nam</option>
+        <option value="USD">Mỹ</option>
+    </select>
+    <select id="to">
+        <option value="USD">Vietn Nam</option>
+        <option value="USD">Mỹ</option>
+    </select>
+    <h2 id="result">Kết quả</h2>
+    <button onclick="convert()">Submit</button>
+
+    <script>
+    function convert(){
+        let amount = document.getElementById('amount').value;
+        let form = document.getElementById('form').value;
+        let to = document.getElementById('to').value;
+        let result;
+
+        if(form === "USD" && to === "VND" ){
+            result = amount * 23000;
+        }else if(form === "VND" && to === "USD"){
+            result = amount / 23000;
+        }else{
+            result = amount
+        }
+        document.getElementById('result').innerText = result;
+        }
+    </script>
+</body>
+</html>
