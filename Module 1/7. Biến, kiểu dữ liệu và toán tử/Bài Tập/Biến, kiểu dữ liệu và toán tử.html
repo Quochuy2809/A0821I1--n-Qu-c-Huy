@@ -34,34 +34,47 @@
 
         }
     </script> -->
-    
-    <!--BÀi 3  -->
-    <!-- <h2>Bán Kính(r)</h2>
+
+    <!-- Bài 4 -->
+    <h2>Độ C</h2>
     <input type="text" id="n1">
-    <h2>Diện tích của hình tròn là</h2>
+    <h2>Độ F là</h2>
     <input type="text" id="result">
     <button onclick="submit()">Click</button>
-    <script>
+ <script>
+    function submit(){
+        var n1 = document.getElementById('n1').value;
+        result = parseInt(n1) / 5 * 9 +32;
+        document.getElementById('result').value = result;
+    }
+// </script> 
+          <!--BÀi 3  -->
+     <!-- <h2>Bán Kính(r)</h2>
+        <input type="text" id="n1">
+        <h2>Diện tích của hình tròn là</h2>
+        <input type="text" id="result">
+        <button onclick="submit()">Click</button>
+     <script>
         function submit(){
             var n1 = document.getElementById('n1').value;
             result = parseInt(n1) * parseInt(n1)*3,14;
             document.getElementById('result').value = result;
         }
-    </script> -->
+    // </script>  -->
 
-    <!-- BÀI 4 -->
-    <h2>Đường kính(d)</h2>
-    <input type="text" id="n1">
-    <h2>Chu vi của hình tròn là</h2>
-    <input type="text" id="result">
-    <button onclick="submit()">Click</button>
-    <script>
-        function submit(){
-            var n1 = document.getElementById('n1').value;
-            result =  parseInt(n1)*3,14;
-            document.getElementById('result').value = result;
-        }
-    </script>
-    
+     <!-- BÀI 4 --> 
+    <!-- <h2>Đường kính(d)</h2>
+    // <input type="text" id="n1">
+    // <h2>Chu vi của hình tròn là</h2>
+    // <input type="text" id="result">
+    // <button onclick="submit()">Click</button>
+    // <script>
+    //     function submit(){
+    //         var n1 = document.getElementById('n1').value;
+    //         result =  parseInt(n1)*3,14;
+    //         document.getElementById('result').value = result;
+    //     }
+    // </script>
+     -->
 </body>
 </html>

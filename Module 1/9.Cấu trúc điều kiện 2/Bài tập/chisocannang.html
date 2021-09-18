@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Weight</h1>
+    <input type="text" id="width">
+    <h1>Height</h1>
+    <input type="text" id="height">
+    <button onclick="btnClick()" id="btn">Calculator</button>
+
+    <script>
+
+        function btnClick(){
+            let inputWidth = document.getElementById('width');
+            let inputHeight = document.getElementById('height');
+            let bmi = parseInt(inputWidth.value / (inputHeight.value*2));
+
+            if (bmi < 18){
+            alert(bmi + "Underweight");
+
+            }else if (bmi < 25.0){
+                alert(bmi + "Normal");
+            }else if (bmi < 30.0){
+                alert(bmi + "Overweight");
+            }else{
+                alert(bmi + "Obese");
+            }
+
+            console.log(bmi)
+        
+            }
+
+      
+
+        // let area = width * height;
+        // alert("Cân nặng của bạn là: " + area);
+    </script>
+</body>
+</html>
