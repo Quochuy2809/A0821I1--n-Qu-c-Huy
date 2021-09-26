@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <!--Bài 1  -->
+    <!-- <script>
+        for(var i = 1;i <=99;i++){
+            console.log(i)
+        }
+    </script> -->
+
+            <!-- Bài2 -->
+    <!-- <script>
+        do{
+            var a = prompt("Nhập nhiệt độ vào đây")
+            if(a < 20){
+                alert("bạn cần tăng nhiệt độ");
+            }else if (a > 100) {
+                alert("bạn cần giảm nhiệt đọ")
+            }else{
+                alert("Bạn đã đúng nhiệt độ " + a);
+                break;
+            }
+        }while(a <20 ||a >100);
+    </script> -->
+
+    
+    <!-- Baaif 3 -->
+    <!-- <script>
+    let num = 2;
+    let count = 0;
+    
+    while (count < 20) {
+    
+        let check = true;
+    
+        for (let i = 2; i < num; i++) {
+            if (num % i === 0) {
+                check = false;
+                break;
+            }
+        }
+    
+        if (check === true) {
+            console.log(num);
+            count++;
+        }
+        num++;
+    }
+    </script> -->
+    
+    <!-- bài 4 -->
+    <!-- <script>
+       for(var i = 1 ; i <=20;i++){
+        if(i % 5 === 0){
+            console.log('đã đúng' + i)
+        }else{
+            console.log('sai r')
+        }
+       }
+    </script> -->
+
+    <!-- bài 6 -->
+     <!-- <script>
+        for(var i = 1 ; i <=30;i++){
+            if(i % 7 === 0 ){
+                console.log("đã chia hết" + i)
+            }else{
+                console.log('còn lại')
+            }
+        }
+     </script> -->
+
+     <!--Bài 7 -->
+     <!-- <script>
+          for (let i = 1; i <= 100; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("fizzBuzz" + i);
+        } else if (i % 5 === 0) {
+            console.log("buzz" + i);
+        } else if (i % 3 === 0) {
+            console.log("fizz" + i);
+        } else {
+            console.log(i);
+        }
+    }
+     </script> -->
+
+        <!-- Bài 8 -->
+        <script>
+        let start = parseInt(prompt("Bạn muốn đoán số từ khoảng : "));
+        let end = parseInt(prompt("tới khoảng : "));
+        let random = Math.round(Math.random() * (end - start) + start);
+        let count = 0;
+        let choose = parseInt(prompt("Mời nhập số : "));
+        while (count < 3){
+            if (random === choose){
+                alert("Victory!!");
+            break;
+        } else if (choose < random){
+            choose = parseInt(prompt("Bạn nhập số bị nhỏ rồi : "));
+            count++;
+        } else {
+            choose = parseInt(prompt("Bạn nhập số bị lớn rồi : "));
+            count++;
+        }
+    }
+        </script>
+</body>
+</html>
