@@ -65,20 +65,16 @@
 
     <!-- Bài 4 -->
     <script>
-        let a = 10
-        for(let i=5;i<a;i++){
-            for(let j=2;j<i;j++){
-                document.write("+")
-                document.write("</br>")
+        let l=parseInt(prompt("nhập chiều dài của hình chữ nhật"));
+        let w=parseInt(prompt("nhập chiều rộng của hình chữ nhật"));
+        for(let i=0;i<l;i++){
+            for(let j=0;j<w;j++){
+                if(i==0||i==l-1||j==0||j==w-1){
+                    document.write("*");
+                }else
+                    document.write("&nbsp&nbsp");
             }
-            for(let j=0;j<i;j++){
-                document.write("+")
-                // document.write("</br>")
-            }
-            for(let j=0;j<i;j++){
-                document.write("+")
-                // document.write("</br>")
-            }
+            document.write("</br>");
         }
     </script>
 </body>
