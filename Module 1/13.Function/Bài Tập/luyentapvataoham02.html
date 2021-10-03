@@ -81,12 +81,46 @@
         }
     }
        nguyen_duong(number);
+
+       // bài 6 cach 2
+       function check_SoNguyen(n){
+    return (Number.isInteger(n) && n > 0);//hàm Number.isInteger(value) dùng để kiểm tra số nguyên.
+}
     </script> -->
+
+
+    <!-- bai 7 -->
+    <!-- <script>
+    function changeIndex(a,b) {
+    let i = a; a = b ; b = i;
+    return a+', '+b; 
+}
+    </script> -->
+
     <!-- bài 8 -->
-    <script>
-    let str = [1, 2, 3, 4, 5];
+    <!-- <script>
+     let str = [1, 2, 3, 4, 5];
     str.reverse();
     console.log(str);
-    </script> 
+    </script>  -->
+
+    <!-- bai 9 -->
+    <script>
+        function checkStringtoArr(arr,str) {
+    let n = 0;
+    let check = false;
+    for(let i = 0; i < arr.length; i++) {
+        if( arr[i] == str) {
+            check = true;
+            n++;
+        }
+    }
+    if( check ) {
+        return 'có '+n+' ký tự '+str+' trong mảng';
+    }else {
+         return str+' không thuộc mảng'
+    }
+}
+    </script>
 </body>
 </html>
