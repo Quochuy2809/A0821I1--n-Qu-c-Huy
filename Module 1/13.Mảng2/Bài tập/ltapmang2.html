@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- bài 1 -->
+    <script>
+        let row=parseInt(prompt("nhập số hàng :"));
+        let col=parseInt(prompt("nhập số cột :"));
+    
+        let arr2d= new Array(row);
+    
+        for(let i=0;i<arr2d.length;i++){
+            arr2d[i]= new Array(col);
+                for(let j=0;j<arr2d[i].length;j++){
+                    let element= prompt("nhập giá trị ptu : ["+i+"]["+j+"] :");
+                    arr2d[i][j]=element;
+            }
+        }
+        for(let i=0;i<arr2d.length;i++){
+            document.write("row "+i+"<br>");
+            for(let j=0;j<arr2d[i].length;j++){
+                document.write(arr2d[i][j]+"<br>")
+            }
+        }
+    
+    </script>
+
+
+<!-- Bài 2 -->
+<!-- <script>
+    let row = parseInt(prompt("nhập số hàng :"));
+    let col = parseInt(prompt("nhập số cột :"));
+
+    let arr2d = new Array(row);
+
+    for (let i = 0; i < arr2d.length; i++) {
+        arr2d[i] = new Array(col);
+        for (let j = 0; j < arr2d[i].length; j++) {
+            let element = prompt("nhập giá trị ptu : [" + i + "][" + j + "] :");
+            arr2d[i][j] = element;
+        }
+    }
+    for (let i = arr2d.length-1; i>=0; i--) {
+        for (let j = arr2d.length-1; j >=0; j--) {
+            document.write(arr2d[i][j] + "&nbsp&nbsp");
+        }
+        document.write("</br>")
+    }
+
+</script> -->
+
+
+<!-- bài3 -->
+<!-- <script>
+    let n = prompt("nhập số lượng phần tử");
+    let arr = new Array(n);
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("nhập ptu thứ " + i);
+    }
+
+    function isNumber(n) {
+        return !isNaN(parseFloat(n)) && !isNaN(n - 0)
+    }
+
+    let d = 0;
+    for (let i = 0; i < n; i++) {
+        if (isNumber(arr[i]))
+            d++;
+            }
+    document.write("giá trị các phần tử trong mảng :" + arr.toString()+"<br>");
+    document.write("số lượng ptu có giá trị là số :" + d);
+
+</script> -->
+
+<!-- bài 4 -->
+<!-- <script>
+    let s=prompt("nhập vào 1 chuỗi dũ liệu :");
+    s=s.replace(/\s+/g, ' ')
+    let d=1;
+    for(let i=0;i<s.length;i++){
+        if(s[i]==" ")
+            d++;
+    }
+    alert("số từ :"+d);
+</script> -->
+
+
+<!-- bài 5 -->
+<!-- <script>
+    let s1=prompt("nhập vào  chuỗi thứ 1 :");
+    let s2=prompt("nhập vào 1 chuỗi thứ 2 :");
+    if(s1===s2){
+        alert("hai chuỗi bằng nhau");
+    }else{
+        alert("hai chuỗi khác nhau");
+    }
+</script> -->
+<!-- bài 6 -->
+
+<!-- <script>
+    let n = prompt("nhập số lượng kí tự");
+    let arr = new Array(n);
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("nhập kí tự thứ :" + i);
+    }
+    for(let i=0;i<n;i++){
+        if(arr[i]=='-')
+            arr[i]='_';
+    }
+    document.write("mảng phần tử sau khi đổi:" + arr.join());
+</script> -->
+</body>
+</html>

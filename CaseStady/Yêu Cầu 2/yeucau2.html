@@ -28,9 +28,21 @@
     }
     </script> -->
 
+    <!-- -------------------------------------------------------------- -->
+    <!-- Bài 1 -->
     <script>
-        var a = prompt("nhập dữ liệu");
-
+    var a = parseInt(prompt("nhập dữ liệu"));
+    var b = 0;
+    var tong = 0;
+    if(a >= 15000000){
+        b = 20;
+    }else if(b >=7000000){
+        b = 10;
+    }else{
+        b = 5;
+    }
+    tong = a + a*b/100;
+    alert("phần trăm " + b + "tổng " + tong)
         
     </script>
 </body>

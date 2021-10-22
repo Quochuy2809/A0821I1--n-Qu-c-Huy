@@ -4,7 +4,94 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body id="menu">
+
+    <!-- Bài 1 -->
+    <!-- <script>
+    function prefix_sums(arr) {
+        var new_arr = [];
+        for (var i = 0; i < arr.length; i++) {
+            new_arr[i] = 0;
+            for (var j = 0; j < i + 1; j++) {
+                new_arr[i] += arr[j];
+            }
+        }
+        return new_arr;
+    }
+
+console.log(prefix_sums([1, 2, 3, 4, 5]));
+
+console.log(prefix_sums([1, 2, -3, 4, 5]));
+    </script> -->
+<!-- ------------------------------------------------------------------------ -->
+
+<!-- Bài 2 -->
+<script>
+    let arrA = [];
+    let arrB = [];
+    let result = [];
+    let sizeA = parseInt(prompt("Nhập vào độ dài mảng A"));
+
+    for(let i=0 ; i< sizeA ; i++){
+        arrA.push(parseInt(prompt("Nhập vào số nguyên trong mảng A")));
+    }
+
+    let sizeB = parseInt(prompt("Nhập vào độ dài mảng B"));
+    for(let i=0; i<arrB; i++){
+        arrB.push(parseInt(prompt("Nhập vào số nguyên trong mảng B")));
+    }
+
+    for(let i=0; i<sizeB;i++){
+        if(arrA.indexOf(arrB[i]) === -1 && result.indexOf(arrB[i]) === -1){
+            result.push(arrB[i]);
+        }
+    }
+    result.sort();
+    alert("Mảng A" + arrA + "\n Mảng B" + arrB + "\n Các số nguyên xuất hiện trong mảng B nhưng lại không xuất hiện mảng A là : " + result);
+</script>
+
+
+<!-- /-------------------------------------------------------------------------- -->
+<!-- bài 3 -->
+<!-- <script>
+    let numerators = [];
+    let denominators = [];
+    let size = parseInt(prompt("Nhập vào độ dài mảng của các phân số"));
+
+    for(let i = 0 ; i < size ; i++){
+        numerators.push(parseInt(prompt("Nhập vào tử số")));
+        denominators.push(parseInt(prompt("Nhập vào mẫu số")));
+    }
+
+    function maxFraction(numerators, denominators){
+        let maxIndex = 0;
+        for(let i =1;i<numerators.length;i++){
+            if(numerators[maxIndex] * denominators[i] < numerators[i] * denominators[maxIndex]){
+                maxIndex = i;
+            }
+        }
+        return maxIndex;
+    }
+    alert("Chỉ số của phân số lớn nhất là: " + maxFraction(numerators,denominators));
+</script> -->
+
+<!-- -------------------------------------------------------------------------------------------- -->
+
+<!-- Bài 4 -->
+<!-- <script>
+    let strNumber = ["không","một","hai","ba","bốn","năm","sáu","bảy","tám","chín"]
+    let number = prompt("Nhập vào số muốn đọc thành chữ");
+    let result = "";
+
+    for(let i = 0;i< number.length;i++){
+        result += strNumber[number[i]];
+    }
+    alert("Số nhập vào là : " + number + "\n Chuyển thành chữ là : " + result);
+</script> -->
+<!-- ------------------------------------------------------------------------------ -->
+
+<!-- Bài 5 -->
+
+<!-- <body id="menu"> 
 <h1>MENU</h1>
 <ul>
     <li><h4>1. cafe</h4></li>
@@ -66,6 +153,6 @@
             }
         }while (true)
     }
-</script>
+</script> -->
 </body>
 </html>

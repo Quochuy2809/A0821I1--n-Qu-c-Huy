@@ -7,6 +7,44 @@
     <title>Document</title>
 </head>
 <body>
+<!-- Bài 1 -->
+<!-- <script>
+    function standardized(name){
+        name = name.trim().toLowerCase();
+        let nameArray = Array.from(name);
+        for (let i= 0;i< nameArray.length -1;i++){
+            if(nameArray[i] === "" &&  nameArray[i +1] === ""){
+                for(let j = i + 1;j < nameArray.length - 1; j++){
+                    nameArray[j] = nameArray[j + 1];
+                }
+                i--;
+                nameArray.pop();
+            }
+        }
+        nameArray[0] = nameArray[0].toUpperCase();
+        for(let i=0 ; i< nameArray.length -1;i++){
+            if (nameArray[i] === ""){
+                nameArray[i+1] = nameArray[i+1].toUpperCase();
+            }
+        }
+        return nameArray.join("");
+    }
+
+    function maxLength(name){
+        let arrName = name.split("");
+        let maxName = arrName[0];
+        for (let i = 1; i <arrName.length;i++){
+            if(maxName.length < arrName[i].length){
+                maxName = arrName[i];
+            }
+        }
+        return maxName;
+    }
+
+    let name = prompt("nhapaj vafo tene :");
+    alert("Teen ban dau la :" + name +"\n Ten chuan hoa la :" + standardized(name)+ "\n Tu co do dai lon nhat la : "+maxLength(standardized(name)));
+</script> -->
+    <!-- ------------------------------------------------------------------------------------ -->
     <!-- Bài 2 -->
     <!-- <script>
         let str = prompt("Nhập chuỗi : ");

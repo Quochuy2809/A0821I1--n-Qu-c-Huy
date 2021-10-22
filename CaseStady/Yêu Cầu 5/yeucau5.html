@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Bài 1 -->
+    <!-- <script>
+        let m = parseInt(prompt("Nhập vào só dòng của ma trận"));
+        let n = parseInt(prompt("Nhập vào số cột của ma trận"));
+        let matrix = [];
+        let total = 0;
+        for(let i = 0;i<m;i++){
+            let row = [];
+            for(let j = 0; j<n;j++){
+                row[j] = parseInt(prompt("Nhập số vào ma trận"));
+            }
+            matrix[i]=row;
+        }
+        for(let i=0;i<matrix.length;i++){
+            for(let j=0;j<matrix[i].length;j++){
+                if(matrix[i][j] %2 === 0){
+                    total += matrix[i][j];
+                }
+            }
+        }
+        console.table(matrix);
+        alert("Tổng của các số chẵn trong ma trân là :"+total);
+    </script> -->
+
+    <!-- -------------------------------------------------------------------------------------------- -->
+    <!-- Bài2 -->
+    <script>
+        let m = parseInt(prompt("Nhập vào só dòng của ma trận"));
+        let n = parseInt(prompt("Nhập vào số cột của ma trận"));
+        let matrix = [];
+        let primeArr = [];
+        for(let i = 0; i < m; i++){
+            let row = [];
+            for(let j = 0; j<n;j++){
+                row[j] = parseInt(prompt("Nhập số vào ma trận"));
+            }
+            matrix[i]=row;
+        }
+        function checkPrime(number){
+            if(number<2){
+                return false;
+            }
+            for(let i=2;i<= Math.sqrt(number);i++){
+                if(number %1){
+                    return false;
+                }
+            }
+            return true;
+        }
+        for(let i=0;i<matrix.length;i++){
+            for(let j=0;j<matrix[i].length;j++){
+                if(checkPrime(matrix[i][j])){
+                    primeArr.push(matrix[i][j]);
+                }
+            }
+        }
+        console.table(matrix);
+        console.log(primeArr);
+    </script>
+</body>
+</html>

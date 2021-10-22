@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- bài 1 -->
+    <script>
+        let n = parseInt(prompt("nhập số lượng phần tử"));
+        let arr = new Array(n);
+        for (let i = 0; i < n; i++) {
+            let tmp = prompt("nhập ptu thứ " + i);
+            arr[i] = tmp;
+        }
+        let d = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if(arr[i]>10){
+                d++;
+            }
+        }
+        document.write("số phần tử lớn hơn 10 là : "+d);
+    </script>
+    
+    <!-- Bài 2 -->
+    <!-- <script>
+        let n = parseInt(prompt("nhập số lượng phần tử"));
+        let arr = [];
+        for (let i = 0; i <n; i++) {
+            let tmp = prompt("nhập ptu thứ " + i);
+            arr[i]=tmp;
+        }
+        var max=arr[0];
+        var ind=0;
+        for (let i = 0; i <=n; i++) {
+            if(arr[i]>max){
+                max=arr[i];
+                ind=i;
+            }
+        }
+        document.write("các giá trị của mảng :"+arr.toString()+"<br>");
+        document.write("phần tử lớn nhất là : "+max+" vị trí :"+ind);
+    </script> -->
+
+    <!-- Bài 3  -->
+    <!-- <script>
+        let n = prompt("nhập số lượng phần tử");
+        let arr = new Array(n);
+        for (let i = 0; i <n; i++) {
+            arr[i]=prompt("nhập ptu thứ " + i);
+        }
+        let max=arr[0];
+        let sum=0;
+        for (let i = 0; i <n; i++) {
+            sum+=arr[i];
+            if(arr[i]>max){
+                max=arr[i];
+            }
+        }
+        sum=sum/n;
+        document.write("các giá trị của mảng :"+arr.toString()+"<br>");
+        document.write("giá trị lớn nhất là : "+max+"<br>");
+        document.write("giá trị trung bình là : " +sum);
+    </script> -->
+    
+    <!-- Bài 4 -->
+    <!-- <script>
+        let n = prompt("nhập số lượng phần tử");
+        let arr = new Array(n);
+        for (let i = 0; i <n; i++) {
+            arr[i]=prompt("nhập ptu thứ " + i);
+        }
+        document.write("trước khi đảo :"+arr.toString()+"<br>");
+        arr=arr.reverse();
+        document.write("trước khi đảo :"+arr.toString()+"<br>");
+    </script> -->
+
+
+    <!-- Bài 5 -->
+    <!-- <script>
+        let n = prompt("nhập số lượng phần tử");
+        let arr = new Array(n);
+        for (let i = 0; i <n; i++) {
+            arr[i]=prompt("nhập ptu thứ " + i);
+        }
+        let d=0;
+        for(let i=0;i<arr.length;i++){
+            if(arr[i]<0)
+                d++;
+        }
+        document.write("các giá trị của mảng :"+arr.toString()+"<br>");
+        document.write("số phần tử âm là : "+d);
+    </script> -->
+
+
+    <!-- Bài 6 -->
+    <!-- <script>
+        let n = prompt("nhập số lượng phần tử");
+        let arr = new Array(n);
+        for (let i = 0; i <n; i++) {
+            arr[i]=prompt("nhập ptu thứ " + i);
+        }
+        let v=prompt("nhập vào 1 số để kiểm tra");
+        let check=false;
+        for(let i=0;i<n;i++){
+            if(v==arr[i])
+                check=true;
+        }
+        (check==true)?alert("phần tử "+v+" có trong mảng"):alert("phần tử "+v+" không có trong mảng");
+    </script> -->
+    
+    <!-- Bài 7 -->
+    <!-- <script>
+        let n = prompt("nhập số lượng phần tử");
+        let arr = new Array(n);
+        for (let i = 0; i <n; i++) {
+          arr[i]=prompt("nhập ptu thứ " + i);
+        }
+        let v=prompt("nhập vào 1 số để kiểm tra");
+        let check=false;
+        for(let i=0;i<n;i++){
+          if(v==arr[i]) {
+              arr.splice(i,1);
+          }
+        }
+        document.write("các giá trị của mảng sau khi xóa :"+arr.toString()+"<br>");
+      </script> -->
+
+
+    <!-- Bài 8 -->
+    <!-- <script>
+        let n = prompt("nhập số lượng phần tử");
+        let arr = new Array(n);
+        for (let i = 0; i <n; i++) {
+            arr[i]=prompt("nhập ptu thứ " + i);
+        }
+        arr.sort(function (a,b){
+          return  b-a;
+        });
+        document.write("các giá trị của mảng sau khi xắp xếp :"+arr.toString()+"<br>");
+    </script> -->
+
+
+
+    <!-- Bài 9 -->
+    <!-- <script>
+        let n = prompt("nhập số lượng phần tử mảng a");
+        let a = new Array(n);
+        for (let i = 0; i <n; i++) {
+            a[i]=prompt("nhập ptu thứ " + i);
+        }
+        let m = prompt("nhập số lượng phần tử mảng b");
+        let b = new Array(n);
+        for (let i = 0; i <m; i++) {
+            b[i]=prompt("nhập ptu thứ " + i);
+        }
+        let c=a.concat(b);
+        document.write("các giá trị của mảng sau khi nối :"+c.toString()+"<br>");
+    </script> -->
+</body>
+</html>
